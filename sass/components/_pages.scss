@@ -1,0 +1,189 @@
+/**
+ * @file
+ * Define general CSS.
+ */
+
+
+body {
+  background-color: #fafafa;
+}
+
+.button {
+	cursor: pointer;
+	display: inline-block;
+
+	min-width: 6em;
+	height: 26px;
+	padding: 6px;
+	border: 1px solid #d5d7d6;
+	-webkit-border-radius: 100px;
+	   -moz-border-radius: 100px;
+	        border-radius: 100px;
+
+	background: rgb(225,225,225);
+	background: -moz-linear-gradient(top, rgba(225,225,225,1) 0%, rgba(250,250,250,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(225,225,225,1)), color-stop(100%,rgba(250,250,250,1)));
+	background: -webkit-linear-gradient(top, rgba(225,225,225,1) 0%,rgba(250,250,250,1) 100%);
+	background: -o-linear-gradient(top, rgba(225,225,225,1) 0%,rgba(250,250,250,1) 100%);
+	background: -ms-linear-gradient(top, rgba(225,225,225,1) 0%,rgba(250,250,250,1) 100%);
+	background: linear-gradient(to bottom, rgba(225,225,225,1) 0%,rgba(250,250,250,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#fafafa',GradientType=0 );
+
+	-webkit-box-shadow: 0 1px 0 0 #fff inset, 0 1px 0 0 #fff;
+	   -moz-box-shadow: 0 1px 0 0 #fff inset, 0 1px 0 0 #fff;
+	        box-shadow: 0 1px 0 0 #fff inset, 0 1px 0 0 #fff;
+
+	font-size: 14px;
+	text-align: center;
+}
+
+.button > button,
+.button > input[type=submit] {
+        margin: 0;
+        width: 100%;
+        border: 0;
+        color: #3a3a3a;
+	text-shadow: 0 1px 0 #fff;
+	display: block;
+
+	height: 100%;
+	-webkit-border-radius: 100px;
+	   -moz-border-radius: 100px;
+	        border-radius: 100px;
+
+	background: rgb(250,250,250);
+	background: -moz-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(214,214,214,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(250,250,250,1)), color-stop(100%,rgba(214,214,214,1)));
+	background: -webkit-linear-gradient(top, rgba(250,250,250,1) 0%,rgba(214,214,214,1) 100%);
+	background: -o-linear-gradient(top, rgba(250,250,250,1) 0%,rgba(214,214,214,1) 100%);
+	background: -ms-linear-gradient(top, rgba(250,250,250,1) 0%,rgba(214,214,214,1) 100%);
+	background: linear-gradient(to bottom, rgba(250,250,250,1) 0%,rgba(214,214,214,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d6d6d6',GradientType=0 );
+
+	-webkit-box-shadow: 0 -1px 4px 0 rgba(255,255,255, .4) inset, 0 0 2px 0 rgba(0,0,0, .25), 0 3px 6px 1px rgba(0,0,0, .25);
+	   -moz-box-shadow: 0 -1px 4px 0 rgba(255,255,255, .4) inset, 0 0 2px 0 rgba(0,0,0, .25), 0 3px 6px 1px rgba(0,0,0, .25);
+	        box-shadow: 0 -1px 4px 0 rgba(255,255,255, .4) inset, 0 0 2px 0 rgba(0,0,0, .25), 0 3px 6px 1px rgba(0,0,0, .25);
+}
+.button:hover > button,
+.button:hover > input[type=submit] {
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(224,224,224,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(255,255,255,1)), color-stop(100%,rgba(224,224,224,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(224,224,224,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(224,224,224,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(224,224,224,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 1%,rgba(224,224,224,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 );
+}
+.button:active > button,
+.button:active > input[type=submit] {
+	-webkit-box-shadow: 0 -1px 4px 0 rgba(255,255,255, .4) inset, 0 0 2px 0 rgba(0,0,0, .25) inset, 0 2px 4px 1px rgba(0,0,0, .25) inset, 0 1px 0 0 #fff;
+	   -moz-box-shadow: 0 -1px 4px 0 rgba(255,255,255, .4) inset, 0 0 2px 0 rgba(0,0,0, .25) inset, 0 2px 4px 1px rgba(0,0,0, .25) inset, 0 1px 0 0 #fff;
+	        box-shadow: 0 -1px 4px 0 rgba(255,255,255, .4) inset, 0 0 2px 0 rgba(0,0,0, .25) inset, 0 2px 4px 1px rgba(0,0,0, .25) inset, 0 1px 0 0 #fff;
+}
+
+#lang-dropdown-form {
+  float: right;
+}
+
+#div-site-name {
+  text-align: center;
+  border-top: 2px solid #999999;
+  border-bottom: 2px solid #999999;
+  color: #999999;
+  text-transform: uppercase;
+}
+
+#sticky-footer {
+  background: #333536;
+  color: #FFFFFF;
+  bottom: 0;
+  height: 3em;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  vertical-align: middle;
+}
+
+#sticky-footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#sticky-footer ul {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+#sticky-footer>ul>li {
+  float: left;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  border-right: 1px solid #6d7070;
+  line-height: 3em;
+  text-transform: uppercase;
+  padding: 0 1em;
+}
+
+#sticky-footer #menu-footer {
+  line-height: 3.7em;
+  width: 10%;
+  padding: 0;
+}
+
+#sticky-footer #compare-link-footer {
+  width: 15%;
+  #nb-products-footer {
+    margin: 0.8em;
+    border-radius: 1em 1em;    
+    background-color: #bedd00;
+    color: black;
+    padding: 0.4em 0.8em;    
+  }
+}
+
+#sticky-footer .empty-footer {
+  width: 10%;
+}
+
+#sticky-footer #fastaction-footer {
+  width: 12%;
+}
+
+#sticky-footer #state-display-footer {
+  color: #bedd00;
+}
+
+#sticky-footer .selected {
+  color: #e84e0e;
+}
+
+#main-menu {
+  line-height: 1.2em;
+  text-align: left;
+  padding: 0.3em;
+  padding-left: 0.6em;
+  background: #333536;
+  color: #FFFFFF;
+  bottom: 3em;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+  display:none;
+}
+
+#main-menu ul {
+  margin: 0;
+  list-style-type:none;
+}
+
+#menu-footer:hover #main-menu {
+  display: block;
+}
