@@ -1,2 +1,0 @@
-wikicompare_theme
-=================
