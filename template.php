@@ -139,11 +139,27 @@ function wikicompare_theme_select($variables) {
   $flag = False;
   $output = '';
   if ($element['#id'] != 'edit-lang-dropdown-select') {
-    $default = $element['#default_value'];
-    $output .= '<div class="select">';
-    if (is_array($default) && isset($default[0]) && isset($element['#options'][$default[0]])) {
-      $output .= '<span>' . $element['#options'][$default[0]] . '</span>';
+
+    $default = '';
+    $default_text = '';
+    if (isset($element['#value'])) {
+      $default = $element['#value'];
+    } else if (isset($element['#default_value'])) {
+      $default = $element['#default_value'];
     }
+    if (is_array($default)) {
+      if (isset($default[0])) {
+        $default = $default[0];
+      } else {
+        $default = '';
+      }
+    }
+
+    if (strlen($default) != 0) { //We use strlen for the test and not != '' because we need to accept 0 as True.
+      $default_text = $element['#options'][$default];
+    }
+    $output .= '<div class="select">';
+    $output .= '<span>' . $default_text . '</span>';
     $flag = True;
   }
 
