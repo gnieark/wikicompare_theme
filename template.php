@@ -130,3 +130,51 @@ function wikicompare_theme_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+function wikicompare_theme_select($variables) {
+  $element = $variables['element'];
+  element_set_attributes($element, array('id', 'name', 'size'));
+  _form_set_class($element, array('form-select'));
+
+  $flag = False;
+  $output = '';
+  if ($element['#id'] != 'edit-lang-dropdown-select') {
+    $default = $element['#default_value'];
+    $output .= '<div class="select">';
+    if (is_array($default) && isset($default[0]) && isset($element['#options'][$default[0]])) {
+      $output .= '<span>' . $element['#options'][$default[0]] . '</span>';
+    }
+    $flag = True;
+  }
+
+  $output .= '<select' . drupal_attributes($element['#attributes']) . '>' . form_select_options($element) . '</select>';
+
+  if ($flag) {
+    $output .= '</div>';
+  }
+
+
+  return $output;
+}
+
+
+
+function wikicompare_theme_button($variables) {
+  $element = $variables['element'];
+  $element['#attributes']['type'] = 'submit';
+  element_set_attributes($element, array('id', 'name', 'value'));
+
+  $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
+
+  $output = '<div class="button-wrapper">';
+  $output .= '<div  id="compute_table_button" link="compute_table_link" class="button">';
+  $output .= '<input' . drupal_attributes($element['#attributes']) . ' />';
+  $output .= '</div></div>';
+
+  return $output;
+}
+
+?>

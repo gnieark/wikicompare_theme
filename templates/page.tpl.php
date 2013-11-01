@@ -17,28 +17,40 @@
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
     <?php endif; ?>
 
-    <?php if ($secondary_menu): ?>
-      <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => $secondary_menu_heading,
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
+    <div id="header-links" class="skip-wikicompare-theme">
 
-    <?php
-      $block = module_invoke('lang_dropdown', 'block_view', 'language');
-      print render($block['content']);
-    ?>
+      <?php
+        $block = module_invoke('lang_dropdown', 'block_view', 'language');
+        print render($block['content']);
+      ?>
+
+
+      <?php if (user_is_anonymous() == True): ?>
+        <div id="block-persona-sign-in" class="block block-persona first last odd">
+          <a href="#" class="persona-sign-in">Login / Register</a>
+        </div>
+      <?php else: ?>
+        <?php if ($secondary_menu): ?>
+          <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
+            <?php print theme('links__system_secondary_menu', array(
+              'links' => $secondary_menu,
+              'attributes' => array(
+                'class' => array('links', 'inline', 'clearfix'),
+              ),
+              'heading' => array(
+                'text' => $secondary_menu_heading,
+                'level' => 'h2',
+                'class' => array('element-invisible'),
+              ),
+            )); ?>
+          </nav>
+        <?php endif; ?>
+      <?php endif; ?>
 
     </div>
+    </div>
+
+    <div style="clear:both;"></div>
 
     <div class="header__div-site_name" id="div-site-name">
       <?php if ($site_name): ?>

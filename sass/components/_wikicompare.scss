@@ -74,8 +74,10 @@
 }
 
 
-#filters_zone .form-item input {
-  margin: 1em;
+#filters_zone .form-item {
+  input, .select {
+    margin: 1em;
+  }
 }
 
 #main_profile_itemlist_container {
@@ -215,6 +217,29 @@
   font-size: 0.7em;
 }
 
+#sidebar-second {
+  #suggest-slideshow-wrapper {
+    overflow: hidden;
+    ul {
+      padding: 0;
+      li {    
+        list-style-type:none;
+        dl {
+          margin: 0;
+          .suggest-criterion {
+            background-color: black;
+            color: #bedd00;
+            width: 100%;
+            padding: 0.3em;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .button.compare-button.selected button{
   background: #fafafa; /* Old browsers */
   background: -moz-linear-gradient(top, #fafafa 0%, #e84e0e 100%); /* FF3.6+ */
@@ -230,7 +255,7 @@
 .wikicompare-dialog {
     position: fixed;
     overflow: auto;
-    height: 90%;
+    height: 80%;
     width: 30%;
     top: 0;
     z-index: 100;
@@ -240,6 +265,9 @@
     -moz-transition:all 1.0s ease-in-out;
     -o-transition:all 1.0s ease-in-out;
     transition:all 1.0s ease-in-out;
+    .wikicompare-dialog-content {
+      padding: 1em;
+    }
 }
 
 #comparative_table_main_product {

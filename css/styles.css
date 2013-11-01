@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -1761,6 +1762,67 @@ body {
 }
 
 /* line 11, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select {
+  margin: 0;
+  margin-right: 1em;
+}
+/* line 14, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .lang-dropdown-select-element {
+  width: auto !important;
+}
+/* line 17, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .dd_after {
+  background-color: #fafafa;
+  width: auto !important;
+  min-width: 10em;
+  font-size: 0.8em;
+}
+/* line 22, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .dd_after .ddTitle {
+  border: 0;
+  background-image: url(../images/language.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: #fafafa;
+  padding-right: 1em;
+}
+/* line 29, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .dd_after .ddTitle .arrow {
+  display: none;
+}
+/* line 33, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .dd_after .ddChild {
+  background-color: #fafafa;
+  border: 0;
+  width: 100% !important;
+}
+/* line 37, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .dd_after .ddChild a:hover, .form-item-lang-dropdown-select .dd_after .ddChild a.selected {
+  background-color: #e84e0e;
+}
+
+/* line 44, ../sass/components/_pages.scss */
+#header-links > div:not(#block-persona-sign-in) {
+  clear: none !important;
+}
+
+/* line 48, ../sass/components/_pages.scss */
+#block-persona-sign-in, #secondary-menu {
+  font-size: 0.8em;
+  float: right;
+  margin-right: 2em;
+}
+/* line 52, ../sass/components/_pages.scss */
+#block-persona-sign-in a, #secondary-menu a {
+  color: black;
+  text-decoration: none;
+}
+/* line 56, ../sass/components/_pages.scss */
+#block-persona-sign-in a:hover, #secondary-menu a:hover {
+  text-decoration: underline;
+}
+
+/* line 61, ../sass/components/_pages.scss */
 .button {
   cursor: pointer;
   display: inline-block;
@@ -1786,7 +1848,7 @@ body {
   text-align: center;
 }
 
-/* line 41, ../sass/components/_pages.scss */
+/* line 91, ../sass/components/_pages.scss */
 .button > button,
 .button > input[type=submit] {
   margin: 0;
@@ -1812,7 +1874,7 @@ body {
   box-shadow: 0 -1px 4px 0 rgba(255, 255, 255, 0.4) inset, 0 0 2px 0 rgba(0, 0, 0, 0.25), 0 3px 6px 1px rgba(0, 0, 0, 0.25);
 }
 
-/* line 68, ../sass/components/_pages.scss */
+/* line 118, ../sass/components/_pages.scss */
 .button:hover > button,
 .button:hover > input[type=submit] {
   background: white;
@@ -1825,7 +1887,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 );
 }
 
-/* line 79, ../sass/components/_pages.scss */
+/* line 129, ../sass/components/_pages.scss */
 .button:active > button,
 .button:active > input[type=submit] {
   -webkit-box-shadow: 0 -1px 4px 0 rgba(255, 255, 255, 0.4) inset, 0 0 2px 0 rgba(0, 0, 0, 0.25) inset, 0 2px 4px 1px rgba(0, 0, 0, 0.25) inset, 0 1px 0 0 white;
@@ -1833,12 +1895,12 @@ body {
   box-shadow: 0 -1px 4px 0 rgba(255, 255, 255, 0.4) inset, 0 0 2px 0 rgba(0, 0, 0, 0.25) inset, 0 2px 4px 1px rgba(0, 0, 0, 0.25) inset, 0 1px 0 0 white;
 }
 
-/* line 85, ../sass/components/_pages.scss */
+/* line 135, ../sass/components/_pages.scss */
 #lang-dropdown-form {
   float: right;
 }
 
-/* line 89, ../sass/components/_pages.scss */
+/* line 139, ../sass/components/_pages.scss */
 #div-site-name {
   text-align: center;
   border-top: 2px solid #999999;
@@ -1847,7 +1909,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 97, ../sass/components/_pages.scss */
+/* line 147, ../sass/components/_pages.scss */
 #sticky-footer {
   background: #333536;
   color: #FFFFFF;
@@ -1860,13 +1922,13 @@ body {
   vertical-align: middle;
 }
 
-/* line 109, ../sass/components/_pages.scss */
+/* line 159, ../sass/components/_pages.scss */
 #sticky-footer a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-/* line 114, ../sass/components/_pages.scss */
+/* line 164, ../sass/components/_pages.scss */
 #sticky-footer ul {
   height: 100%;
   margin-left: auto;
@@ -1877,7 +1939,7 @@ body {
   padding: 0;
 }
 
-/* line 124, ../sass/components/_pages.scss */
+/* line 174, ../sass/components/_pages.scss */
 #sticky-footer > ul > li {
   float: left;
   height: 100%;
@@ -1889,18 +1951,18 @@ body {
   padding: 0 1em;
 }
 
-/* line 135, ../sass/components/_pages.scss */
+/* line 185, ../sass/components/_pages.scss */
 #sticky-footer #menu-footer {
   line-height: 3.7em;
   width: 10%;
   padding: 0;
 }
 
-/* line 141, ../sass/components/_pages.scss */
+/* line 191, ../sass/components/_pages.scss */
 #sticky-footer #compare-link-footer {
   width: 15%;
 }
-/* line 143, ../sass/components/_pages.scss */
+/* line 193, ../sass/components/_pages.scss */
 #sticky-footer #compare-link-footer #nb-products-footer {
   margin: 0.8em;
   border-radius: 1em 1em;
@@ -1909,27 +1971,27 @@ body {
   padding: 0.4em 0.8em;
 }
 
-/* line 152, ../sass/components/_pages.scss */
+/* line 202, ../sass/components/_pages.scss */
 #sticky-footer .empty-footer {
   width: 10%;
 }
 
-/* line 156, ../sass/components/_pages.scss */
+/* line 206, ../sass/components/_pages.scss */
 #sticky-footer #fastaction-footer {
   width: 12%;
 }
 
-/* line 160, ../sass/components/_pages.scss */
+/* line 210, ../sass/components/_pages.scss */
 #sticky-footer #state-display-footer {
   color: #bedd00;
 }
 
-/* line 164, ../sass/components/_pages.scss */
+/* line 214, ../sass/components/_pages.scss */
 #sticky-footer .selected {
   color: #e84e0e;
 }
 
-/* line 168, ../sass/components/_pages.scss */
+/* line 218, ../sass/components/_pages.scss */
 #main-menu {
   line-height: 1.2em;
   text-align: left;
@@ -1944,13 +2006,13 @@ body {
   display: none;
 }
 
-/* line 182, ../sass/components/_pages.scss */
+/* line 232, ../sass/components/_pages.scss */
 #main-menu ul {
   margin: 0;
   list-style-type: none;
 }
 
-/* line 187, ../sass/components/_pages.scss */
+/* line 237, ../sass/components/_pages.scss */
 #menu-footer:hover #main-menu {
   display: block;
 }
@@ -2068,17 +2130,17 @@ td {
   top: 0.2em;
 }
 
-/* line 77, ../sass/components/_wikicompare.scss */
-#filters_zone .form-item input {
+/* line 78, ../sass/components/_wikicompare.scss */
+#filters_zone .form-item input, #filters_zone .form-item .select {
   margin: 1em;
 }
 
-/* line 81, ../sass/components/_wikicompare.scss */
+/* line 83, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container {
   overflow: hidden;
 }
 
-/* line 85, ../sass/components/_wikicompare.scss */
+/* line 87, ../sass/components/_wikicompare.scss */
 #main_profile_itemlists {
   height: 18em;
   position: relative;
@@ -2088,7 +2150,7 @@ td {
   transition: all 1.0s ease-in-out;
 }
 
-/* line 96, ../sass/components/_wikicompare.scss */
+/* line 98, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate {
   border: 1px solid #dddede;
   float: left;
@@ -2097,7 +2159,7 @@ td {
   width: 100%;
 }
 
-/* line 104, ../sass/components/_wikicompare.scss */
+/* line 106, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate ul {
   margin: 0;
   padding: 0;
@@ -2105,7 +2167,7 @@ td {
   overflow: auto;
 }
 
-/* line 111, ../sass/components/_wikicompare.scss */
+/* line 113, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate li {
   padding: 0.5em;
   padding-right: 3em;
@@ -2130,12 +2192,12 @@ td {
   /* IE6-9 */
 }
 
-/* line 129, ../sass/components/_wikicompare.scss */
+/* line 131, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate .has_checked_children {
   color: #e84e0e;
 }
 
-/* line 133, ../sass/components/_wikicompare.scss */
+/* line 135, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate li .item_link {
   height: 0.8em;
   position: absolute;
@@ -2143,12 +2205,12 @@ td {
   top: 0.6em;
 }
 
-/* line 140, ../sass/components/_wikicompare.scss */
+/* line 142, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate #add_profile_link, #main_profile_itemlist_container .itemlist_translate .link_fastaction {
   float: right;
 }
 
-/* line 146, ../sass/components/_wikicompare.scss */
+/* line 148, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate p {
   margin: 0;
   padding-top: 0.3em;
@@ -2157,83 +2219,108 @@ td {
   height: 30px;
   background-color: #efefef;
 }
-/* line 153, ../sass/components/_wikicompare.scss */
+/* line 155, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate p a {
   color: black;
   text-decoration: none;
 }
-/* line 157, ../sass/components/_wikicompare.scss */
+/* line 159, ../sass/components/_wikicompare.scss */
 #main_profile_itemlist_container .itemlist_translate p a:hover {
   text-decoration: underline;
 }
 
-/* line 163, ../sass/components/_wikicompare.scss */
+/* line 165, ../sass/components/_wikicompare.scss */
 #products_list_column table {
   border: 0;
 }
-/* line 166, ../sass/components/_wikicompare.scss */
+/* line 168, ../sass/components/_wikicompare.scss */
 #products_list_column td, #products_list_column th {
   border: 0;
   padding: 0.7em;
   text-align: center;
 }
-/* line 171, ../sass/components/_wikicompare.scss */
+/* line 173, ../sass/components/_wikicompare.scss */
 #products_list_column .list-column-product {
   width: 30%;
   text-align: left;
 }
-/* line 175, ../sass/components/_wikicompare.scss */
+/* line 177, ../sass/components/_wikicompare.scss */
 #products_list_column .list-column-rank {
   width: 20%;
 }
 
-/* line 180, ../sass/components/_wikicompare.scss */
+/* line 182, ../sass/components/_wikicompare.scss */
 #products-list-header {
   margin-right: 1em;
   margin-bottom: 0;
 }
 
-/* line 185, ../sass/components/_wikicompare.scss */
+/* line 187, ../sass/components/_wikicompare.scss */
 #products-list-header th {
   border-left: 1px solid #dee0df;
   color: black;
   text-transform: none;
 }
 
-/* line 191, ../sass/components/_wikicompare.scss */
+/* line 193, ../sass/components/_wikicompare.scss */
 #products-list-header .list-column-product {
   font-size: 1.5em;
   text-transform: uppercase;
   border-left: 0;
 }
 
-/* line 197, ../sass/components/_wikicompare.scss */
+/* line 199, ../sass/components/_wikicompare.scss */
 #products-list-header .list-column-rank {
   font-size: 1.5em;
   text-transform: uppercase;
 }
 
-/* line 202, ../sass/components/_wikicompare.scss */
+/* line 204, ../sass/components/_wikicompare.scss */
 #products_list {
   border-top: 1px solid #dee0df;
 }
 
-/* line 206, ../sass/components/_wikicompare.scss */
+/* line 208, ../sass/components/_wikicompare.scss */
 #products_list table {
   margin: 0;
 }
 
-/* line 210, ../sass/components/_wikicompare.scss */
+/* line 212, ../sass/components/_wikicompare.scss */
 #products_list .normaltitle {
   font-weight: bold;
 }
 
-/* line 214, ../sass/components/_wikicompare.scss */
+/* line 216, ../sass/components/_wikicompare.scss */
 #products_list .short_description {
   font-size: 0.7em;
 }
 
-/* line 218, ../sass/components/_wikicompare.scss */
+/* line 221, ../sass/components/_wikicompare.scss */
+#sidebar-second #suggest-slideshow-wrapper {
+  overflow: hidden;
+}
+/* line 223, ../sass/components/_wikicompare.scss */
+#sidebar-second #suggest-slideshow-wrapper ul {
+  padding: 0;
+}
+/* line 225, ../sass/components/_wikicompare.scss */
+#sidebar-second #suggest-slideshow-wrapper ul li {
+  list-style-type: none;
+}
+/* line 227, ../sass/components/_wikicompare.scss */
+#sidebar-second #suggest-slideshow-wrapper ul li dl {
+  margin: 0;
+}
+/* line 229, ../sass/components/_wikicompare.scss */
+#sidebar-second #suggest-slideshow-wrapper ul li dl .suggest-criterion {
+  background-color: black;
+  color: #bedd00;
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1.2em;
+}
+
+/* line 243, ../sass/components/_wikicompare.scss */
 .button.compare-button.selected button {
   background: #fafafa;
   /* Old browsers */
@@ -2253,11 +2340,11 @@ td {
   /* IE6-9 */
 }
 
-/* line 230, ../sass/components/_wikicompare.scss */
+/* line 255, ../sass/components/_wikicompare.scss */
 .wikicompare-dialog {
   position: fixed;
   overflow: auto;
-  height: 90%;
+  height: 80%;
   width: 30%;
   top: 0;
   z-index: 100;
@@ -2268,8 +2355,12 @@ td {
   -o-transition: all 1.0s ease-in-out;
   transition: all 1.0s ease-in-out;
 }
+/* line 268, ../sass/components/_wikicompare.scss */
+.wikicompare-dialog .wikicompare-dialog-content {
+  padding: 1em;
+}
 
-/* line 245, ../sass/components/_wikicompare.scss */
+/* line 273, ../sass/components/_wikicompare.scss */
 #comparative_table_main_product {
   position: fixed;
   overflow: auto;
@@ -2286,24 +2377,24 @@ td {
   transition: all 1.0s ease-in-out;
 }
 
-/* line 262, ../sass/components/_wikicompare.scss */
+/* line 290, ../sass/components/_wikicompare.scss */
 #comparative_table table {
   margin: 0;
 }
 
-/* line 266, ../sass/components/_wikicompare.scss */
+/* line 294, ../sass/components/_wikicompare.scss */
 #comparative_table_header .first {
   color: #333435;
   text-align: left;
   background-color: #e5e7e7;
 }
 
-/* line 272, ../sass/components/_wikicompare.scss */
+/* line 300, ../sass/components/_wikicompare.scss */
 #comparative_table_header th div {
   position: relative;
 }
 
-/* line 276, ../sass/components/_wikicompare.scss */
+/* line 304, ../sass/components/_wikicompare.scss */
 #comparative_table_header .vs-icon {
   position: absolute;
   top: 0;
@@ -2312,48 +2403,48 @@ td {
   margin-bottom: -50%;
 }
 
-/* line 284, ../sass/components/_wikicompare.scss */
+/* line 312, ../sass/components/_wikicompare.scss */
 #comparative_table .odd {
   background-color: #efefef;
 }
-/* line 286, ../sass/components/_wikicompare.scss */
+/* line 314, ../sass/components/_wikicompare.scss */
 #comparative_table .odd .first {
   background-color: #dedfdf;
 }
 
-/* line 291, ../sass/components/_wikicompare.scss */
+/* line 319, ../sass/components/_wikicompare.scss */
 #comparative_table .even {
   background-color: #f7f7f7;
 }
-/* line 293, ../sass/components/_wikicompare.scss */
+/* line 321, ../sass/components/_wikicompare.scss */
 #comparative_table .even .first {
   background-color: #e6e6e6;
 }
 
-/* line 299, ../sass/components/_wikicompare.scss */
+/* line 327, ../sass/components/_wikicompare.scss */
 #comparative_table .first b {
   font-size: 0.9em;
 }
-/* line 302, ../sass/components/_wikicompare.scss */
+/* line 330, ../sass/components/_wikicompare.scss */
 #comparative_table .first .normaltitle {
   font-weight: bold;
 }
-/* line 304, ../sass/components/_wikicompare.scss */
+/* line 332, ../sass/components/_wikicompare.scss */
 #comparative_table .first .normaltitle a {
   text-decoration: none;
 }
 
-/* line 310, ../sass/components/_wikicompare.scss */
+/* line 338, ../sass/components/_wikicompare.scss */
 #products_list .product_list_item {
   position: static;
 }
 
-/* line 314, ../sass/components/_wikicompare.scss */
+/* line 342, ../sass/components/_wikicompare.scss */
 #comparative_table .evaluation_cell > div, #products_list .list-column-rank > div {
   position: relative;
   height: 100%;
 }
-/* line 317, ../sass/components/_wikicompare.scss */
+/* line 345, ../sass/components/_wikicompare.scss */
 #comparative_table .evaluation_cell > div .chart-percent, #products_list .list-column-rank > div .chart-percent {
   position: absolute;
   right: 0;
@@ -2365,16 +2456,101 @@ td {
   height: 1em;
   margin: auto;
 }
-/* line 328, ../sass/components/_wikicompare.scss */
+/* line 356, ../sass/components/_wikicompare.scss */
 #comparative_table .evaluation_cell > div .supertitle, #products_list .list-column-rank > div .supertitle {
   position: absolute;
   left: 70%;
   top: 70%;
 }
 
-/* line 335, ../sass/components/_wikicompare.scss */
+/* line 363, ../sass/components/_wikicompare.scss */
 .link-icon, .fastaction_item img {
   height: 1em;
+}
+
+/**
+ * @file
+ * Define general CSS.
+ */
+/* line 7, ../sass/components/_fields.scss */
+input[type=text] {
+  border: 1px solid #d5d7d6;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 1px 0 0 white, 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 -4px 16px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0 1px 0 0 white, 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 -4px 16px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 0 0 white, 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 -4px 16px rgba(255, 255, 255, 0.9);
+  padding: 0 0.5em;
+}
+
+/* line 22, ../sass/components/_fields.scss */
+.select {
+  overflow: hidden;
+  height: 26px;
+  border: 1px solid #d5d7d6;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 0 0 white, 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 -4px 16px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0 1px 0 0 white, 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 -4px 16px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 0 0 white, 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 -4px 16px rgba(255, 255, 255, 0.9);
+}
+
+/* line 39, ../sass/components/_fields.scss */
+.select:after {
+  content: '▼';
+  display: block;
+  width: 25px;
+  padding-left: 5px;
+  border-left: 1px solid #d5d7d6;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: #fafafa;
+  background: -moz-linear-gradient(top, #fafafa 0%, #d6d6d6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #d6d6d6));
+  background: -webkit-linear-gradient(top, #fafafa 0%, #d6d6d6 100%);
+  background: -o-linear-gradient(top, #fafafa 0%, #d6d6d6 100%);
+  background: -ms-linear-gradient(top, #fafafa 0%, #d6d6d6 100%);
+  background: linear-gradient(to bottom, #fafafa 0%, #d6d6d6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#d6d6d6',GradientType=0 );
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  text-shadow: 0 1px 0 #fff;
+}
+
+/* line 67, ../sass/components/_fields.scss */
+.select span {
+  overflow: hidden;
+  position: absolute;
+  left: 15px;
+  top: -1px;
+  right: 30px;
+  bottom: -1px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+/* line 80, ../sass/components/_fields.scss */
+.select select {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin: 0;
 }
 
 /* basic scrollbar styling */
