@@ -2301,17 +2301,18 @@ td {
 }
 /* line 223, ../sass/components/_wikicompare.scss */
 #sidebar-second #suggest-slideshow-wrapper ul {
+  margin: 0;
   padding: 0;
 }
-/* line 225, ../sass/components/_wikicompare.scss */
+/* line 226, ../sass/components/_wikicompare.scss */
 #sidebar-second #suggest-slideshow-wrapper ul li {
   list-style-type: none;
 }
-/* line 227, ../sass/components/_wikicompare.scss */
+/* line 228, ../sass/components/_wikicompare.scss */
 #sidebar-second #suggest-slideshow-wrapper ul li dl {
   margin: 0;
 }
-/* line 229, ../sass/components/_wikicompare.scss */
+/* line 230, ../sass/components/_wikicompare.scss */
 #sidebar-second #suggest-slideshow-wrapper ul li dl .suggest-criterion {
   background-color: black;
   color: #bedd00;
@@ -2320,7 +2321,7 @@ td {
   font-size: 1.2em;
 }
 
-/* line 243, ../sass/components/_wikicompare.scss */
+/* line 244, ../sass/components/_wikicompare.scss */
 .button.compare-button.selected button {
   background: #fafafa;
   /* Old browsers */
@@ -2340,8 +2341,8 @@ td {
   /* IE6-9 */
 }
 
-/* line 255, ../sass/components/_wikicompare.scss */
-.wikicompare-dialog {
+/* line 256, ../sass/components/_wikicompare.scss */
+.wikicompare-dialog, #comparative_table_main_product {
   position: fixed;
   overflow: auto;
   height: 80%;
@@ -2355,46 +2356,38 @@ td {
   -o-transition: all 1.0s ease-in-out;
   transition: all 1.0s ease-in-out;
 }
-/* line 268, ../sass/components/_wikicompare.scss */
-.wikicompare-dialog .wikicompare-dialog-content {
+/* line 269, ../sass/components/_wikicompare.scss */
+.wikicompare-dialog .wikicompare-dialog-content, #comparative_table_main_product .wikicompare-dialog-content {
   padding: 1em;
 }
 
-/* line 273, ../sass/components/_wikicompare.scss */
+/* line 274, ../sass/components/_wikicompare.scss */
 #comparative_table_main_product {
-  position: fixed;
-  overflow: auto;
-  height: 90%;
-  width: 30%;
-  top: 0;
   left: -30%;
-  z-index: 100;
-  background-color: #fafafa;
-  border: 1px solid;
-  -webkit-transition: all 1.0s ease-in-out;
-  -moz-transition: all 1.0s ease-in-out;
-  -o-transition: all 1.0s ease-in-out;
-  transition: all 1.0s ease-in-out;
+}
+/* line 276, ../sass/components/_wikicompare.scss */
+#comparative_table_main_product .mCSB_container {
+  padding: 1em;
 }
 
-/* line 290, ../sass/components/_wikicompare.scss */
+/* line 281, ../sass/components/_wikicompare.scss */
 #comparative_table table {
   margin: 0;
 }
 
-/* line 294, ../sass/components/_wikicompare.scss */
+/* line 285, ../sass/components/_wikicompare.scss */
 #comparative_table_header .first {
   color: #333435;
   text-align: left;
   background-color: #e5e7e7;
 }
 
-/* line 300, ../sass/components/_wikicompare.scss */
+/* line 291, ../sass/components/_wikicompare.scss */
 #comparative_table_header th div {
   position: relative;
 }
 
-/* line 304, ../sass/components/_wikicompare.scss */
+/* line 295, ../sass/components/_wikicompare.scss */
 #comparative_table_header .vs-icon {
   position: absolute;
   top: 0;
@@ -2403,48 +2396,48 @@ td {
   margin-bottom: -50%;
 }
 
-/* line 312, ../sass/components/_wikicompare.scss */
+/* line 303, ../sass/components/_wikicompare.scss */
 #comparative_table .odd {
   background-color: #efefef;
 }
-/* line 314, ../sass/components/_wikicompare.scss */
+/* line 305, ../sass/components/_wikicompare.scss */
 #comparative_table .odd .first {
   background-color: #dedfdf;
 }
 
-/* line 319, ../sass/components/_wikicompare.scss */
+/* line 310, ../sass/components/_wikicompare.scss */
 #comparative_table .even {
   background-color: #f7f7f7;
 }
-/* line 321, ../sass/components/_wikicompare.scss */
+/* line 312, ../sass/components/_wikicompare.scss */
 #comparative_table .even .first {
   background-color: #e6e6e6;
 }
 
-/* line 327, ../sass/components/_wikicompare.scss */
+/* line 318, ../sass/components/_wikicompare.scss */
 #comparative_table .first b {
   font-size: 0.9em;
 }
-/* line 330, ../sass/components/_wikicompare.scss */
+/* line 321, ../sass/components/_wikicompare.scss */
 #comparative_table .first .normaltitle {
   font-weight: bold;
 }
-/* line 332, ../sass/components/_wikicompare.scss */
+/* line 323, ../sass/components/_wikicompare.scss */
 #comparative_table .first .normaltitle a {
   text-decoration: none;
 }
 
-/* line 338, ../sass/components/_wikicompare.scss */
+/* line 329, ../sass/components/_wikicompare.scss */
 #products_list .product_list_item {
   position: static;
 }
 
-/* line 342, ../sass/components/_wikicompare.scss */
+/* line 333, ../sass/components/_wikicompare.scss */
 #comparative_table .evaluation_cell > div, #products_list .list-column-rank > div {
   position: relative;
   height: 100%;
 }
-/* line 345, ../sass/components/_wikicompare.scss */
+/* line 336, ../sass/components/_wikicompare.scss */
 #comparative_table .evaluation_cell > div .chart-percent, #products_list .list-column-rank > div .chart-percent {
   position: absolute;
   right: 0;
@@ -2456,14 +2449,14 @@ td {
   height: 1em;
   margin: auto;
 }
-/* line 356, ../sass/components/_wikicompare.scss */
+/* line 347, ../sass/components/_wikicompare.scss */
 #comparative_table .evaluation_cell > div .supertitle, #products_list .list-column-rank > div .supertitle {
   position: absolute;
   left: 70%;
   top: 70%;
 }
 
-/* line 363, ../sass/components/_wikicompare.scss */
+/* line 354, ../sass/components/_wikicompare.scss */
 .link-icon, .fastaction_item img {
   height: 1em;
 }

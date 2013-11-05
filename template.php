@@ -139,7 +139,7 @@ function wikicompare_theme_select($variables) {
   $flag = False;
   $output = '';
   if ($element['#id'] != 'edit-lang-dropdown-select') {
-
+    
     $default = '';
     $default_text = '';
     if (isset($element['#value'])) {

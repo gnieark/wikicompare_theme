@@ -135,7 +135,7 @@
       <span id="nb-products-footer">3</span><span id="compare-text-footer">Compare products</span>
     <?php if (arg(0) =='home'): ?></a><?php endif; ?>
     </li>
-    <li class="empty-footer"><a href="/wikicompare_make_cleaning_callback/nojs" id="toogle_fastaction_link" class="simple_ajaxlink" action="toogle_fastaction" style="display:none;">F</a><a href="/wikicompare_make_cleaning_callback/nojs" id="make_cleaning_link" class="simple_ajaxlink" action="make_cleaning" style="display:none;">C</a></li>
+    <li class="empty-footer"><a href="/wikicompare_make_cleaning_callback/nojs" id="toogle_fastaction_link" class="ajaxlink" action="toogle_fastaction" style="display:none;">F</a><a href="/wikicompare_make_cleaning_callback/nojs" id="make_cleaning_link" class="ajaxlink" action="make_cleaning" style="display:none;">C</a></li>
     <?php if (user_is_anonymous() != True): ?>
       <li id="fastaction-footer">Toogle Fastaction</li>
     <?php else: ?>
