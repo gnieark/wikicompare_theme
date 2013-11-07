@@ -186,7 +186,7 @@ function wikicompare_theme_button($variables) {
   }
 
   $output = '<div class="button-wrapper">';
-  $output .= '<div  id="compute_table_button" link="compute_table_link" class="button">';
+  $output .= '<div  id="compute-table-button" link="compute-table-link" class="button">';
   $output .= '<input' . drupal_attributes($element['#attributes']) . ' />';
   $output .= '</div></div>';
 

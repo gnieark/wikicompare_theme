@@ -223,7 +223,7 @@ $zen-auto-include-item-base: false;
     word-wrap: break-word;
   }
 
-  #products_list_column {
+  #products-list-column {
     @include zen-grid-item(3, 2);
     -moz-box-sizing: border-box;
     padding-left: 10px;
