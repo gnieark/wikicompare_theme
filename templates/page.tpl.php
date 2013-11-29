@@ -8,7 +8,6 @@
  */
 ?>
 
-<?php variable_set('wikicompare_test_platform', 0); ?>
 <?php if (variable_get('wikicompare_test_platform', 0)): ?>
   <p id="alert-test-platform">This is a test platform, it can be destroyed at ANY moment when we will upgrade our files to test a new version of the system.</p>
 <?php endif; ?>
