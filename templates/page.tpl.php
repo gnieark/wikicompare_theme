@@ -64,8 +64,6 @@
       <?php endif; ?>
     </div>
 
-    <?php print render($page['header']); ?>
-
   </header>
 
   <div id="main">
