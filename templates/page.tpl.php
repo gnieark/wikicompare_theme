@@ -8,6 +8,11 @@
  */
 ?>
 
+<?php variable_set('wikicompare_test_platform', 0); ?>
+<?php if (variable_get('wikicompare_test_platform', 0)): ?>
+  <p id="alert-test-platform">This is a test platform, it can be destroyed at ANY moment when we will upgrade our files to test a new version of the system.</p>
+<?php endif; ?>
+
 <div id="page">
 
   <header class="header" id="header" role="banner">
@@ -27,7 +32,7 @@
 
       <?php if (user_is_anonymous() == True): ?>
         <div id="block-persona-sign-in" class="block block-persona first last odd">
-          <a href="#" class="persona-sign-in">Login / Register</a>
+          <a href="http://www.wikicompare.info/user" target="_blank" class="persona-sign-in">Login / Register</a>
         </div>
       <?php else: ?>
         <?php if ($secondary_menu): ?>
