@@ -10,7 +10,13 @@
 
 
 #home #sidebar-first #filter-title {
-  float: left;
+  display: inline;
+}
+
+#reset-table-link {
+  float: right;
+  line-height: 4em;
+  color: #a6a6a6;
 }
 
 #home #sidebar-first .button-wrapper {
@@ -24,13 +30,6 @@
   left: 50%;
   top: -1.5em;
   margin-left: -4.5em;
-}
-
-
-#reset-table-link {
-  float: right;
-  vertical-align: bottom;
-  line-height: 6em;
 }
 
 #filters-zone {
@@ -78,6 +77,11 @@
   input, .select {
     margin: 1em;
   }
+}
+
+#comparative-table-main-profile h2 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #main-profile-itemlist-container {
@@ -164,6 +168,7 @@
 #products-list-column {
   table {
     border: 0;
+    margin-top: 0;
   }
   td, th {
     border: 0;
@@ -186,6 +191,7 @@
 
 #products-list-header th {
   border-left: 1px solid #dee0df;
+  font-family: 'montserratbold', sans-serif;
   color: black;
   text-transform: none;
 }
@@ -218,6 +224,12 @@
 }
 
 #sidebar-second {
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   #suggest-slideshow-wrapper {
     overflow: hidden;
     ul {
@@ -282,6 +294,10 @@
   margin: 0;
 }
 
+#comparative-table-header {
+  font-family: 'montserratbold', sans-serif;
+}
+
 #comparative-table-header .first {
   color: #333435;
   text-align: left;
@@ -334,14 +350,15 @@
   position: relative;
   height: 100%;
   .chart-percent {
+    font-family: 'steelfishregular', sans-serif;
     position: absolute;
     right: 0;
     left: 0;
     top: 0;
     bottom: 0;
-    font-size: 2.2em;
+    font-size: 2.8em;
     font-weight: bold;
-    height: 1em;
+    height: 0.8em;
     margin: auto;
   }
   .supertitle {
