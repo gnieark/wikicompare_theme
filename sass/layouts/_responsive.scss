@@ -213,30 +213,31 @@ $zen-auto-include-item-base: false;
 
 #home {
 
-  $zen-column-count: 5;
-
   #sidebar-first {
-    @include zen-grid-item(1, 1);
-    -moz-box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
-    word-wrap: break-word;
+    width: 20%;
+    max-width: 20em;
+    float: left;
   }
 
   #products-list-column {
-    @include zen-grid-item(3, 2);
-    -moz-box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
-    word-wrap: break-word;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   #sidebar-second {
-    @include zen-grid-item(1, 5);
-    -moz-box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
-    word-wrap: break-word;
+    width: 20%;
+    max-width: 20em;
+    float: right;
   }
 
+}
+
+
+@media (min-width: 102em) {
+#home #products-list-column {
+    margin-left: 20em;
+    margin-right: 20em;
+  }
 }
