@@ -64,6 +64,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f2',GradientType=0 ); /* IE6-9 */
 }
 
+#filters-zone .form-item  .disabled{
+  background-color: #efefef;
+}
+
 /*
 #filters-zone .form-item label img {
   height: 1.8em;
@@ -101,10 +105,14 @@
 
 #main-profile-itemlist-container .itemlist-translate {
   border: 1px solid #dddede;
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:        border-box;
   float:left;
   position:absolute;
   top: 0;
-  width:100%;
+  //We can't use 100% otherwise we will lose the borders.
+  width:99%;
 }
 
 #main-profile-itemlist-container .itemlist-translate ul {
@@ -288,6 +296,9 @@
     z-index: 100;
     background-color: #fafafa;
     border: 1px solid;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
     -webkit-transition:all 1.0s ease-in-out;
     -moz-transition:all 1.0s ease-in-out;
     -o-transition:all 1.0s ease-in-out;
@@ -295,6 +306,10 @@
     .wikicompare-dialog-content {
       padding: 1em;
     }
+}
+
+.wikicompare-dialog .selectlink img {
+    height: 1em;
 }
 
 #comparative-table-main-product {
