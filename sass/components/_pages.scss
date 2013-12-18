@@ -25,20 +25,26 @@ h2 {
   .lang-dropdown-select-element {
     width: auto !important;
   }
-  .dd_after {
+  .ddcommon {
     background-color: #fafafa;
     width: auto !important;
     min-width: 10em;
-    font-size: 0.8em;
+    border: 0;
     .ddTitle {
-      border: 0;
+      width: auto !important;
       background-image:url(../images/language.png);
       background-repeat:no-repeat;
       background-position:right center;
       background-color: #fafafa;
-      padding-right: 1em;
-      .arrow {
+      .divider {
+        border: 0;
+      }
+      .ddArrow {
         display: none;
+      }
+      .ddTitleText {
+        padding: 0;
+        padding-right: 2em;
       }
     }
     .ddChild {
@@ -56,7 +62,7 @@ h2 {
   clear: none !important;
 }
 
-#block-persona-sign-in, #secondary-menu {
+#lang_dropdown_form_language, #block-persona-sign-in, #secondary-menu {
   font-size: 0.8em;
   float: right;
   margin-right: 2em;

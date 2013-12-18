@@ -1751,7 +1751,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1386869089');
+  background-image: url('../images/progress.gif?1387387415');
 }
 
 /**
@@ -1787,58 +1787,66 @@ h2 {
   width: auto !important;
 }
 /* line 28, ../sass/components/_pages.scss */
-.form-item-lang-dropdown-select .dd_after {
+.form-item-lang-dropdown-select .ddcommon {
   background-color: #fafafa;
   width: auto !important;
   min-width: 10em;
-  font-size: 0.8em;
+  border: 0;
 }
 /* line 33, ../sass/components/_pages.scss */
-.form-item-lang-dropdown-select .dd_after .ddTitle {
-  border: 0;
+.form-item-lang-dropdown-select .ddcommon .ddTitle {
+  width: auto !important;
   background-image: url(../images/language.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-color: #fafafa;
-  padding-right: 1em;
 }
-/* line 40, ../sass/components/_pages.scss */
-.form-item-lang-dropdown-select .dd_after .ddTitle .arrow {
+/* line 39, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .ddcommon .ddTitle .divider {
+  border: 0;
+}
+/* line 42, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .ddcommon .ddTitle .ddArrow {
   display: none;
 }
-/* line 44, ../sass/components/_pages.scss */
-.form-item-lang-dropdown-select .dd_after .ddChild {
+/* line 45, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .ddcommon .ddTitle .ddTitleText {
+  padding: 0;
+  padding-right: 2em;
+}
+/* line 50, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .ddcommon .ddChild {
   background-color: #fafafa;
   border: 0;
   width: 100% !important;
 }
-/* line 48, ../sass/components/_pages.scss */
-.form-item-lang-dropdown-select .dd_after .ddChild a:hover, .form-item-lang-dropdown-select .dd_after .ddChild a.selected {
+/* line 54, ../sass/components/_pages.scss */
+.form-item-lang-dropdown-select .ddcommon .ddChild a:hover, .form-item-lang-dropdown-select .ddcommon .ddChild a.selected {
   background-color: #e84e0e;
 }
 
-/* line 55, ../sass/components/_pages.scss */
+/* line 61, ../sass/components/_pages.scss */
 #header-links > div:not(#block-persona-sign-in) {
   clear: none !important;
 }
 
-/* line 59, ../sass/components/_pages.scss */
-#block-persona-sign-in, #secondary-menu {
+/* line 65, ../sass/components/_pages.scss */
+#lang_dropdown_form_language, #block-persona-sign-in, #secondary-menu {
   font-size: 0.8em;
   float: right;
   margin-right: 2em;
 }
-/* line 63, ../sass/components/_pages.scss */
-#block-persona-sign-in a, #secondary-menu a {
+/* line 69, ../sass/components/_pages.scss */
+#lang_dropdown_form_language a, #block-persona-sign-in a, #secondary-menu a {
   color: black;
   text-decoration: none;
 }
-/* line 67, ../sass/components/_pages.scss */
-#block-persona-sign-in a:hover, #secondary-menu a:hover {
+/* line 73, ../sass/components/_pages.scss */
+#lang_dropdown_form_language a:hover, #block-persona-sign-in a:hover, #secondary-menu a:hover {
   text-decoration: underline;
 }
 
-/* line 72, ../sass/components/_pages.scss */
+/* line 78, ../sass/components/_pages.scss */
 .button {
   cursor: pointer;
   display: inline-block;
@@ -1864,7 +1872,7 @@ h2 {
   text-align: center;
 }
 
-/* line 102, ../sass/components/_pages.scss */
+/* line 108, ../sass/components/_pages.scss */
 .button > button,
 .button > input[type=submit] {
   margin: 0;
@@ -1890,7 +1898,7 @@ h2 {
   box-shadow: 0 -1px 4px 0 rgba(255, 255, 255, 0.4) inset, 0 0 2px 0 rgba(0, 0, 0, 0.25), 0 3px 6px 1px rgba(0, 0, 0, 0.25);
 }
 
-/* line 129, ../sass/components/_pages.scss */
+/* line 135, ../sass/components/_pages.scss */
 .button:hover > button,
 .button:hover > input[type=submit] {
   background: white;
@@ -1903,7 +1911,7 @@ h2 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 );
 }
 
-/* line 140, ../sass/components/_pages.scss */
+/* line 146, ../sass/components/_pages.scss */
 .button:active > button,
 .button:active > input[type=submit] {
   -webkit-box-shadow: 0 -1px 4px 0 rgba(255, 255, 255, 0.4) inset, 0 0 2px 0 rgba(0, 0, 0, 0.25) inset, 0 2px 4px 1px rgba(0, 0, 0, 0.25) inset, 0 1px 0 0 white;
@@ -1911,12 +1919,12 @@ h2 {
   box-shadow: 0 -1px 4px 0 rgba(255, 255, 255, 0.4) inset, 0 0 2px 0 rgba(0, 0, 0, 0.25) inset, 0 2px 4px 1px rgba(0, 0, 0, 0.25) inset, 0 1px 0 0 white;
 }
 
-/* line 146, ../sass/components/_pages.scss */
+/* line 152, ../sass/components/_pages.scss */
 #lang-dropdown-form {
   float: right;
 }
 
-/* line 150, ../sass/components/_pages.scss */
+/* line 156, ../sass/components/_pages.scss */
 #div-site-name {
   text-align: center;
   border-top: 1px solid #dddede;
@@ -1925,7 +1933,7 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 158, ../sass/components/_pages.scss */
+/* line 164, ../sass/components/_pages.scss */
 #sticky-footer {
   background: #333536;
   color: #FFFFFF;
@@ -1938,13 +1946,13 @@ h2 {
   vertical-align: middle;
 }
 
-/* line 170, ../sass/components/_pages.scss */
+/* line 176, ../sass/components/_pages.scss */
 #sticky-footer a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-/* line 175, ../sass/components/_pages.scss */
+/* line 181, ../sass/components/_pages.scss */
 #sticky-footer ul {
   height: 100%;
   margin-left: auto;
@@ -1955,7 +1963,7 @@ h2 {
   padding: 0;
 }
 
-/* line 185, ../sass/components/_pages.scss */
+/* line 191, ../sass/components/_pages.scss */
 #sticky-footer > ul > li {
   float: left;
   height: 100%;
@@ -1967,18 +1975,18 @@ h2 {
   padding: 0 1em;
 }
 
-/* line 196, ../sass/components/_pages.scss */
+/* line 202, ../sass/components/_pages.scss */
 #sticky-footer #menu-footer {
   line-height: 3.7em;
   width: 10%;
   padding: 0;
 }
 
-/* line 202, ../sass/components/_pages.scss */
+/* line 208, ../sass/components/_pages.scss */
 #sticky-footer #compare-link-footer {
   width: 15%;
 }
-/* line 204, ../sass/components/_pages.scss */
+/* line 210, ../sass/components/_pages.scss */
 #sticky-footer #compare-link-footer #nb-products-footer {
   margin: 0.8em;
   border-radius: 1em 1em;
@@ -1987,27 +1995,27 @@ h2 {
   padding: 0.15em 0.6em;
 }
 
-/* line 213, ../sass/components/_pages.scss */
+/* line 219, ../sass/components/_pages.scss */
 #sticky-footer .empty-footer {
   width: 10%;
 }
 
-/* line 217, ../sass/components/_pages.scss */
+/* line 223, ../sass/components/_pages.scss */
 #sticky-footer #fastaction-footer {
   width: 12%;
 }
 
-/* line 221, ../sass/components/_pages.scss */
+/* line 227, ../sass/components/_pages.scss */
 #sticky-footer #state-display-footer {
   color: #bedd00;
 }
 
-/* line 225, ../sass/components/_pages.scss */
+/* line 231, ../sass/components/_pages.scss */
 #sticky-footer .selected {
   color: #e84e0e;
 }
 
-/* line 229, ../sass/components/_pages.scss */
+/* line 235, ../sass/components/_pages.scss */
 #main-menu {
   line-height: 1.2em;
   text-align: left;
@@ -2022,18 +2030,18 @@ h2 {
   display: none;
 }
 
-/* line 243, ../sass/components/_pages.scss */
+/* line 249, ../sass/components/_pages.scss */
 #main-menu ul {
   margin: 0;
   list-style-type: none;
 }
 
-/* line 248, ../sass/components/_pages.scss */
+/* line 254, ../sass/components/_pages.scss */
 #menu-footer:hover #main-menu {
   display: block;
 }
 
-/* line 252, ../sass/components/_pages.scss */
+/* line 258, ../sass/components/_pages.scss */
 #alert-test-platform {
   background: #FE2E2E;
   color: #FFFFFF;
@@ -2572,7 +2580,12 @@ input[type=text] {
   box-shadow: 0 1px 0 0 white, 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 -4px 16px rgba(255, 255, 255, 0.9);
 }
 
-/* line 39, ../sass/components/_fields.scss */
+/* line 40, ../sass/components/_fields.scss */
+.select-disabled {
+  background-color: #efefef;
+}
+
+/* line 44, ../sass/components/_fields.scss */
 .select:after {
   color: #999999;
   content: '▼';
@@ -2598,7 +2611,7 @@ input[type=text] {
   text-shadow: 0 1px 0 #fff;
 }
 
-/* line 68, ../sass/components/_fields.scss */
+/* line 73, ../sass/components/_fields.scss */
 .select span {
   overflow: hidden;
   position: absolute;
@@ -2610,7 +2623,7 @@ input[type=text] {
   white-space: nowrap;
 }
 
-/* line 81, ../sass/components/_fields.scss */
+/* line 86, ../sass/components/_fields.scss */
 .select select {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";

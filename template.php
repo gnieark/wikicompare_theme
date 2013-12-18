@@ -158,7 +158,11 @@ function wikicompare_theme_select($variables) {
     if (strlen($default) != 0) { //We use strlen for the test and not != '' because we need to accept 0 as True.
       $default_text = $element['#options'][$default];
     }
-    $output .= '<div class="select">';
+    $output .= '<div class="select';
+    if (isset($element['#attributes']['disabled'])) {
+      $output .= ' select-disabled';
+    }
+    $output .= '">';
     $output .= '<span>' . $default_text . '</span>';
     $flag = True;
   }

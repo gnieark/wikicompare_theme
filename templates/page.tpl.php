@@ -23,12 +23,6 @@
 
     <div id="header-links" class="skip-wikicompare-theme">
 
-      <?php
-        $block = module_invoke('lang_dropdown', 'block_view', 'language');
-        print render($block['content']);
-      ?>
-
-
       <?php if (user_is_anonymous() == True): ?>
         <div id="block-persona-sign-in" class="block block-persona first last odd">
           <a href="http://www.wikicompare.info/user" target="_blank" class="persona-sign-in">Login / Register</a>
@@ -50,6 +44,11 @@
           </nav>
         <?php endif; ?>
       <?php endif; ?>
+
+      <?php
+        $block = module_invoke('lang_dropdown', 'block_view', 'language');
+        print render($block['content']);
+      ?>
 
     </div>
     </div>
