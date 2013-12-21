@@ -150,12 +150,12 @@ body {
  */
 /* line 158, ../sass/_normalize.scss */
 a:link {
-  color: #FF4F12;
+  color: red;
 }
 
 /* line 161, ../sass/_normalize.scss */
 a:visited {
-  color: #FF4F12;
+  color: red;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */
@@ -1751,7 +1751,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1387387415');
+  background-image: url('../images/progress.gif?1387545416');
 }
 
 /**
@@ -1766,7 +1766,7 @@ body {
 
 /* line 11, ../sass/components/_pages.scss */
 h2 {
-  color: #FF4F12;
+  color: red;
   text-transform: uppercase;
   margin-left: 0.5em;
   font-family: 'montserratbold', sans-serif;
@@ -1977,7 +1977,7 @@ h2 {
 
 /* line 202, ../sass/components/_pages.scss */
 #sticky-footer #menu-footer {
-  line-height: 3.7em;
+  line-height: 4em;
   width: 10%;
   padding: 0;
 }
@@ -1990,7 +1990,7 @@ h2 {
 #sticky-footer #compare-link-footer #nb-products-footer {
   margin: 0.8em;
   border-radius: 1em 1em;
-  background-color: #bedd00;
+  background-color: #00f3ff;
   color: black;
   padding: 0.15em 0.6em;
 }
@@ -2007,12 +2007,12 @@ h2 {
 
 /* line 227, ../sass/components/_pages.scss */
 #sticky-footer #state-display-footer {
-  color: #bedd00;
+  color: #00f3ff;
 }
 
 /* line 231, ../sass/components/_pages.scss */
 #sticky-footer .selected {
-  color: #e84e0e;
+  color: red;
 }
 
 /* line 235, ../sass/components/_pages.scss */
@@ -2075,7 +2075,7 @@ table {
 /* line 16, ../sass/components/_tables.scss */
 th {
   text-transform: uppercase;
-  color: #FF4F12;
+  color: red;
   padding: 1em;
   background-color: #f9fafa;
 }
@@ -2382,7 +2382,7 @@ td {
 /* line 256, ../sass/components/_wikicompare.scss */
 #sidebar-second #suggest-slideshow-wrapper ul li dl .suggest-criterion {
   background-color: #3a3a3a;
-  color: #bedd00;
+  color: #00f3ff;
   width: 100%;
   padding: 0.3em;
   font-size: 1.2em;

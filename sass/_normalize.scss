@@ -156,10 +156,10 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
-  color: #FF4F12;
+  color: $color-red1;
 }
 a:visited {
-  color: #FF4F12;
+  color: $color-red1;
 }
 a:hover,
 a:focus {

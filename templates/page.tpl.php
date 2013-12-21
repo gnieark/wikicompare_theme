@@ -132,6 +132,7 @@
         </nav>
       <?php endif; ?>
     </li>
+    <?php if (arg(0) =='home' || arg(0) =='compare'): ?>
     <li id="compare-link-footer"<?php if (arg(0) =='home'): ?>><a class="compare-url" href="#"><?php else: ?> class="product-dialog"><?php endif; ?>
       <span id="nb-products-footer">3</span><span id="compare-text-footer">Compare products</span>
     <?php if (arg(0) =='home'): ?></a><?php endif; ?>
@@ -143,6 +144,7 @@
       <li class="empty-footer"></li>
     <?php endif; ?>
     <li><span id="state-display-footer">Display</span> <span id="state-draft-footer">Draft</span> | <span id="state-closed-footer">Closed</span></li>
+    <?php endif; ?>
   </ul>
 </div>
 
